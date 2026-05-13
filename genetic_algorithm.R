@@ -52,7 +52,7 @@ order_crossover <- function(parent1, parent2) {
 }
 
 # Mutacja
-swap_mutation <- function(route, p_mut = 0.1) {
+swap_mutation <- function(route, p_mut) {
   if(runif(1) < p_mut) {
     ids <- sample(1:length(route), 2)
     tmp <- route[ids[1]]
